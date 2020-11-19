@@ -18,19 +18,19 @@ public class Calculator {
 	static void calculator(int num1, int num2 , int operator) {
 		switch(operator) {
 		   case 1:
-		    System.out.println("Sum of "+num1+" and "+num2+"is "+(num1+num2));
+		    System.out.println("Sum of "+num1+" and "+num2+" is "+(num1+num2));
 		    break;
 		   case 2:
-			   System.out.println("Multiplication of "+num1+" and "+num2+"is "+(num1*num2));
+			   System.out.println("Multiplication of "+num1+" and "+num2+" is "+(num1*num2));
 			    break;
 		   case 3:
-			   System.out.println("Division of "+num1+" and "+num2+"is "+(num1/num2));
+			   System.out.println("Division of "+num1+" and "+num2+" is "+(num1/num2));
 			    break;
 		   case 4:
 			   System.out.println("Modulus of "+num1+" and "+num2+"is "+(num1%num2));
 			    break;
 		   case 5:
-			   System.out.println("Substraction of "+num1+" and "+num2+"is "+(num1-num2));
+			   System.out.println("Substraction of "+num1+" and "+num2+" is "+(num1-num2));
 			    break;
 		   
 		    default:

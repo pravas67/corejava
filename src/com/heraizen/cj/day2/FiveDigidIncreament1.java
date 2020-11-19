@@ -9,7 +9,6 @@ public static void main(String[] args) {
     int n =sc.nextInt();
 	int first, second, third, forth;
 	int res=0;
-	int sum=0;
 	first = (n/10000); 
 	res+=(((first+1)%10)*10000);
     n = n%10000;

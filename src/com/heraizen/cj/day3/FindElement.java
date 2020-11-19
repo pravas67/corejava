@@ -15,6 +15,7 @@ public class FindElement {
 		System.out
 				.println("Enter the no to check the element is present in the array or not. element(between 1 to 50)");
 		int key = sc.nextInt();
+		sc.close();
 		findElement(arr, key);
 	}
 
