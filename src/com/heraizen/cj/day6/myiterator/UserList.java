@@ -7,7 +7,7 @@ public class UserList implements MyIterator {
 
 	}
 
-	UserList() {
+	private UserList() {
 
 	}
 
@@ -15,7 +15,7 @@ public class UserList implements MyIterator {
 
 	@Override
 	public boolean hasNext() {
-		return check++ < name.length;
+		return check < name.length;
 	}
 
 	@Override
@@ -23,7 +23,7 @@ public class UserList implements MyIterator {
 		return name[check++];
 	}
 
-	public MyIterator getIterator() {
+	public static MyIterator getIterator() {
 		return new UserList();
 	}
 }

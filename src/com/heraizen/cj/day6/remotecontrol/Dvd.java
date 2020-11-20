@@ -3,7 +3,7 @@ package com.heraizen.cj.day6.remotecontrol;
 public class Dvd implements RemoteControl {
 	boolean onOff = false;
 	boolean mute = false;
-	int max_vol = 10;
+	int max_vol = 50;
 	int min_vol = 10;
 
 	@Override
@@ -20,8 +20,8 @@ public class Dvd implements RemoteControl {
 	public int volumeUp(int increment) {
 		if (!mute && onOff) {
 			max_vol += increment;
-			if (max_vol > 20)
-				return max_vol = 20;
+			if (max_vol > 50)
+				return max_vol = 50;
 			else
 				return max_vol;
 		} else
