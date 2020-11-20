@@ -6,7 +6,7 @@ public class DbConnectionAlreadyCreatedException  extends RuntimeException{
 	private String message;
 
 	public DbConnectionAlreadyCreatedException() {
-		this.message = "Db connection already created";
+		this.message = "Db Connection established";
 	}
 
 	public DbConnectionAlreadyCreatedException(String message) {

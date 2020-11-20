@@ -1,10 +1,10 @@
 package com.heraizen.cj.day7.emp;
 
 public class Emp implements EmpSevice {
-	int empId;
-	String empName;
-	String designation;
-	double basic;
+	private int empId;
+	private String empName;
+	private String designation;
+	private double basic;
 	private double hra;
 
 	Emp(int empId, String empName, String designation, double basic, double hra) {

@@ -3,7 +3,7 @@ package com.heraizen.cj.day7.bankaccount;
 public class SavingAccount extends BankAccountFactory {
 	SavingAccount(int accNo, String custName, float balance) {
 		if (balance < 1000) {
-			throw new LowBalanceException();
+			throw new LowBalanceException("Amount is less to create an account");
 		}
 		super.accNo = accNo;
 		super.custName = custName;

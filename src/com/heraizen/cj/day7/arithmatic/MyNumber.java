@@ -1,35 +1,35 @@
 package com.heraizen.cj.day7.arithmatic;
 
 public class MyNumber {
-	int a;
-	int b;
-	double result;
+	private int firstNumber;
+	private int secondNumber;
+	private double result;
 
-	public MyNumber(int a, int b) {
-		this.a = a;
-		this.b = b;
+	public MyNumber(int firstNumber, int secondNumber) {
+		this.firstNumber = firstNumber;
+		this.secondNumber = secondNumber;
 	}
 
-	public int add() {
-		result = a + b;
+	public int addition() {
+		result = firstNumber + secondNumber;
 		return (int) result;
 	}
 
-	public int sub() {
-		result = a - b;
+	public int substraction() {
+		result = firstNumber - secondNumber;
 		return (int) result;
 	}
 
-	public int mul() {
-		result = a * b;
+	public int multiplication() {
+		result = firstNumber * secondNumber;
 		return (int) result;
 	}
 
-	public double div() {
-		if (b == 0) {
+	public double division() {
+		if (secondNumber == 0) {
 			throw new DivisibleByZeroException();
 		}
-		result = a + b;
+		result = firstNumber + secondNumber;
 		return result;
 	}
 }
