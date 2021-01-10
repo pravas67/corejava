@@ -8,7 +8,7 @@ public class DbConnectionMain {
 		try {
 			connection2 = DbConnection.getDbConnection();
 		} catch (Exception e) {
-//			connection1.destroyDbConnection();
+			connection1.destroyDbConnection();
 			connection2 = DbConnection.getDbConnection();
 			System.out.println("connected" + connection2);
 		}
